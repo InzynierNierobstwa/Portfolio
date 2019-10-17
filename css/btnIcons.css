@@ -1,0 +1,21 @@
+.skills__icon--html {
+  color: #FF6C39;
+}
+
+.skills__icon--css {
+  color: #347DC6;
+}
+
+.skills__icon--js {
+  color: #F0DB4F;
+}
+
+.skills__icon--react,
+.skills__icon--wordpress {
+  color: #313638;
+}
+
+.skills__icon--git {
+  color: #F05133;
+}
+/*# sourceMappingURL=btnIcons.css.map */

@@ -1,0 +1,110 @@
+@import "variables.scss";
+@import "btnIcons.scss";
+
+/* HEADER */
+
+.header{
+    padding: 2em;
+    background: url("../img/19292.jpg") no-repeat center center;
+    text-align: center;
+    font-family: $fontNunito;
+    color: $onyx;
+}
+
+.header__button, 
+.footer__button{
+    font-family: $fontLato;
+    margin: 1em;
+    padding: 0.5em;
+    background: $gainsboro;
+    border: none;
+    box-shadow: 0px 0px 15px 0px $gainsboro;
+}
+
+.header__group--up{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.header__link--start{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: $earthyellow;
+}
+
+.header__link--github {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    color: $earthyellow;
+}
+
+.header__link--linkedin {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    color: $earthyellow;
+}
+
+/* MAIN PAGE */
+
+.container{
+    padding: 2em;
+    background: $platinum;
+}
+
+/* MAIN PAGE - SKILLS */
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+/* MAIN PAGE - PORTFOLIO */
+
+.portfolio{
+    font-family: $fontNunito;
+}
+
+.portfolio__projects{
+    background: $gainsboro;
+    padding: 3em;
+}
+
+.portfolio__text{
+    text-align: justify;
+}
+
+/* MAIN PAGE - EXPERIENCE AND SCHOOLS */
+
+.experience{
+    font-family: $fontNunito;
+}
+
+/* FOOTER */
+
+.footer{
+    padding: 2em;
+    background: $lightgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.footer__button{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.footer__group{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: auto;
+}
+
+.footer__link{
+    margin: 0.5em;
+}
