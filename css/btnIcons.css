@@ -1,3 +1,47 @@
+/* HEADER */
+.header__link--start {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  color: #DDF2FF;
+}
+
+.header__link--github {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  color: #DDF2FF;
+}
+
+.header__link--linkedin {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  color: #DDF2FF;
+}
+
+.header__button,
+.footer__button {
+  font-family: "Lato", sans-serif;
+  color: #DDF2FF;
+  margin: 1em;
+  padding: 0.5em;
+  background: #7E92B3;
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px 0px #7E92B3;
+          box-shadow: 0px 0px 15px 0px #7E92B3;
+}
+
+/* SKILLS */
 .skills__icon--html {
   color: #FF6C39;
 }
@@ -12,10 +56,49 @@
 
 .skills__icon--react,
 .skills__icon--wordpress {
-  color: #313638;
+  color: #3A608F;
 }
 
 .skills__icon--git {
   color: #F05133;
+}
+
+/* EXPERIENCE */
+.logoPwr {
+  width: 15vh;
+  height: auto;
+  display: block;
+  margin: 1vh auto;
+}
+
+.logoBosch {
+  width: 20vh;
+  height: auto;
+  margin: 1vh auto;
+}
+
+.logoWabco {
+  width: 20vh;
+  height: auto;
+  margin: 1vh auto;
+}
+
+.portfolio__button {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #DDF2FF;
+  padding: 0.5em;
+  background: #7E92B3;
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px 0px #7E92B3;
+          box-shadow: 0px 0px 15px 0px #7E92B3;
+}
+
+.logoSelf {
+  margin: 1vh auto;
+}
+
+.portfolio__icon {
+  margin-right: 0.5em;
 }
 /*# sourceMappingURL=btnIcons.css.map */

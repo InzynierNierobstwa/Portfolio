@@ -1,3 +1,42 @@
+$midblue: #7E92B3;
+$lightblue: #DDF2FF;
+$blue: #3A608F;
+$lightgreen: #00E7AB;
+
+$fontNunito: 'Nunito', sans-serif;
+$fontLato: 'Lato', sans-serif;
+
+/* HEADER */
+.header__link--start {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: $lightblue;
+}
+
+.header__link--github {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    color: $lightblue;
+}
+
+.header__link--linkedin {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    color: $lightblue;
+}
+
+.header__button,
+.footer__button {
+    font-family: $fontLato;
+    color: $lightblue;
+    margin: 1em;
+    padding: 0.5em;
+    background: $midblue;
+    border: none;
+    box-shadow: 0px 0px 15px 0px $midblue;
+}
+
+/* SKILLS */
 .skills__icon--html {
     color: #FF6C39;
 }
@@ -12,9 +51,47 @@
 
 .skills__icon--react,
 .skills__icon--wordpress {
-    color: #313638;
+    color: $blue;
 }
 
 .skills__icon--git {
     color: #F05133;
+}
+
+/* EXPERIENCE */
+.logoPwr{
+    width: 15vh;
+    height: auto;
+    display: block;
+    margin: 1vh auto;
+}
+
+.logoBosch{
+    width: 20vh;
+    height: auto;
+    margin: 1vh auto;
+}
+
+.logoWabco{
+    width: 20vh;
+    height: auto;
+    margin: 1vh auto;
+}
+
+.portfolio__button {
+    font-family: $fontLato;
+    text-decoration: none;
+    color: $lightblue;
+    padding: 0.5em;
+    background: $midblue;
+    border: none;
+    box-shadow: 0px 0px 15px 0px $midblue;
+}
+
+.logoSelf{
+    margin: 1vh auto;
+}
+
+.portfolio__icon{
+    margin-right: 0.5em;
 }

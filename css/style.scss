@@ -8,17 +8,7 @@
     background: url("../img/19292.jpg") no-repeat center center;
     text-align: center;
     font-family: $fontNunito;
-    color: $onyx;
-}
-
-.header__button, 
-.footer__button{
-    font-family: $fontLato;
-    margin: 1em;
-    padding: 0.5em;
-    background: $gainsboro;
-    border: none;
-    box-shadow: 0px 0px 15px 0px $gainsboro;
+    color: $lightblue;
 }
 
 .header__group--up{
@@ -28,29 +18,11 @@
     grid-gap: 10px;
 }
 
-.header__link--start{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    color: $earthyellow;
-}
-
-.header__link--github {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    color: $earthyellow;
-}
-
-.header__link--linkedin {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-    color: $earthyellow;
-}
-
 /* MAIN PAGE */
 
 .container{
     padding: 2em;
-    background: $platinum;
+    background: $lightblue;
 }
 
 /* MAIN PAGE - SKILLS */
@@ -66,22 +38,51 @@
 
 .portfolio{
     font-family: $fontNunito;
+    color: $lightblue;
 }
 
 .portfolio__projects{
-    background: $gainsboro;
-    padding: 3em;
+    background: $grey;
+    margin: 5vh auto;
+    padding: 5vh;
 }
 
 .portfolio__text{
     text-align: justify;
 }
 
+.portfolio__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__button{
+    width: 7.5em;
+    margin: 0.5em;
+}
+
 /* MAIN PAGE - EXPERIENCE AND SCHOOLS */
 
 .experience{
     font-family: $fontNunito;
+    color: $blue;
 }
+
+.experience__project{
+    font-family: $fontNunito;
+    color: $lightblue;
+    background: $grey;
+    margin: 5vh auto;
+    padding: 5vh;
+}
+
+.experience__img{
+   display: flex;
+   justify-content: space-around; 
+   flex-wrap: wrap;
+}
+
 
 /* FOOTER */
 
