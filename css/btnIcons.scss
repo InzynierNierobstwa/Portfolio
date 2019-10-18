@@ -85,8 +85,14 @@ $fontLato: 'Lato', sans-serif;
     padding: 0.5em;
     background: $midblue;
     border: none;
-    box-shadow: 0px 0px 15px 0px $midblue;
+    transition: all .2s ease;
 }
+
+/* .portfolio__button:hover,
+.portfolio__button:focus{
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+} */
 
 .logoSelf{
     margin: 1vh auto;
