@@ -1,157 +1,154 @@
 @import "variables.scss";
 @import "btnIcons.scss";
 
-body{
-    box-sizing: inherit;
-    position: relative;
+body {
+  box-sizing: inherit;
+  position: relative;
 }
 
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
-
 
 /* HEADER */
 
-.header{
-    background: url("../img/19292.jpg") no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    font-family: $fontNunito;
-    color: $lightblue;
-    padding: 3vh;
+.header {
+  background: url("../img/19292.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: $fontNunito;
+  color: $lightblue;
+  padding: 3vh;
 }
 
-.header__group--up{
-    max-width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+.header__group--up {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 /* MAIN PAGE */
 
-.container{
-    width: 100%;
-    margin: 0vh auto;
-    background: $lightblue;
+.container {
+  width: 100%;
+  margin: 0vh auto;
+  background: $lightblue;
 }
 
 /* MAIN PAGE - SKILLS */
 
-.skills{
-    max-width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
+.skills {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 /* MAIN PAGE - PORTFOLIO */
 
-.portfolio{
-    max-width: 1170px;
-    font-family: $fontNunito;
-    color: $blue;
-    margin: 0 auto;
+.portfolio {
+  max-width: 1170px;
+  font-family: $fontNunito;
+  color: $blue;
+  margin: 0 auto;
 }
 
-.portfolio__projects{
-    background: $grey;
-    color: $lightblue;
-    margin: 5vh 3vh;
-    padding: 5vh;
+.portfolio__projects {
+  background: $grey;
+  color: $lightblue;
+  margin: 5vh 3vh;
+  padding: 5vh;
 }
 
-.portfolio__img img{
-    width: 100%;
-    max-width: 50vh;
-    height: auto;
-    display: block;
-    margin: 1vh auto;
-    border-radius: 10px;
-    position: relative;
+.portfolio__img img {
+  width: 100%;
+  max-width: 50vh;
+  height: auto;
+  display: block;
+  margin: 1vh auto;
+  border-radius: 10px;
+  position: relative;
 }
 
-.portfolio__buttons{
-    text-align: center;
-    margin-top: 3vh;
+.portfolio__buttons {
+  text-align: center;
+  margin-top: 3vh;
 }
 
-.portfolio__text{
-    text-align: justify;
+.portfolio__text {
+  text-align: justify;
 }
 
 /* MAIN PAGE - EXPERIENCE AND SCHOOLS */
 
-.experience{
-    max-width: 1170px;
-    font-family: $fontNunito;
-    color: $blue;
-    margin: 0 auto;
+.experience {
+  max-width: 1170px;
+  font-family: $fontNunito;
+  color: $blue;
+  margin: 0 auto;
 }
 
-.experience__project{
-    font-family: $fontNunito;
-    color: $lightblue;
-    background: $grey;
-    margin: 5vh 3vh;
-    padding: 5vh;
+.experience__project {
+  font-family: $fontNunito;
+  color: $lightblue;
+  background: $grey;
+  margin: 5vh 3vh;
+  padding: 5vh;
 }
 
-.experience__img{
-   display: flex;
-   justify-content: space-around; 
-   flex-wrap: wrap;
+.experience__img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.experience__text{
-    text-align: justify;
+.experience__text {
+  text-align: justify;
 }
-
 
 /* FOOTER */
 
-.footer{
-    background: $lightgreen;
+.footer {
+  background: $lightgreen;
 }
 
-.footer__content{
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 2vh;
+.footer__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .portfolio__projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
-}
+  }
 
-@media (min-width: 700px){
-    .portfolio__projects{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
+  .portfolio__content {
+    flex: 1 1 70%;
+  }
 
-    .portfolio__content{
-        flex: 1 1 70%;
-    }
+  .portfolio__img {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 2vh;
+  }
 
-    .portfolio__img{
-        display: block;
-        width: 40%;
-        height: auto;
-        margin: 0 2vh;
-    }
-
-
-    .experience__project{
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
+  .experience__project {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }

@@ -1,141 +1,140 @@
 @import "mixin.scss";
 
-$midblue: #7E92B3;
-$lightblue: #DDF2FF;
-$blue: #3A608F;
-$lightgreen: #00E7AB;
+$midblue: #7e92b3;
+$lightblue: #ddf2ff;
+$blue: #3a608f;
+$lightgreen: #00e7ab;
 
-$fontNunito: 'Nunito', sans-serif;
-$fontLato: 'Lato', sans-serif;
+$fontNunito: "Nunito", sans-serif;
+$fontLato: "Lato", sans-serif;
 
 /* HEADER */
 
 .header__link--start {
-    @include transform;
-    color: $lightblue;
+  @include transform;
+  color: $lightblue;
 }
 
-.header__link--start:hover{
-    transform: translateY(-5px);
+.header__link--start:hover {
+  transform: translateY(-5px);
 }
 
 .header__link--github {
-    @include transform;
-    color: $lightblue;
-    object-fit: contain;
+  @include transform;
+  color: $lightblue;
+  object-fit: contain;
 }
 
-.header__link--github:hover{
-    transform: translateY(-5px);
+.header__link--github:hover {
+  transform: translateY(-5px);
 }
 
 .header__link--linkedin {
-    transition-property: transform;
-    transition-duration: .5s;
-    transition-timing-function: ease-in;
-    color: $lightblue;
-    margin-left: 1vh;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  color: $lightblue;
+  margin-left: 1vh;
 }
 
-.header__link--linkedin:hover{
-    transform: translateY(-5px);
+.header__link--linkedin:hover {
+  transform: translateY(-5px);
 }
 
 .header__button,
 .footer__button {
-    font-family: $fontLato;
-    color: $lightblue;
-    margin: 2vh;
-    padding: 1vh;
-    background: $midblue;
-    border: none;
-    box-shadow: 0px 0px 15px 0px $midblue;
+  font-family: $fontLato;
+  color: $lightblue;
+  margin: 2vh;
+  padding: 1vh;
+  background: $midblue;
+  border: none;
+  box-shadow: 0px 0px 15px 0px $midblue;
 
-    transition-property: background, border-radius, transform;
-    transition-duration: 1s, 1s, 1s;
-    transition-timing-function: ease-in;
+  transition-property: background, border-radius, transform;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: ease-in;
 }
 
 .header__button:hover,
-.footer__button:hover{
-    background: $lightgreen;
-    border-radius: 15px;
-    transform: translateY(-5px);
+.footer__button:hover {
+  background: $lightgreen;
+  border-radius: 15px;
+  transform: translateY(-5px);
 }
 
 /* SKILLS */
 .skills__icon--html {
-    color: #FF6C39;
-    margin: 2vh;
+  color: #ff6c39;
+  margin: 2vh;
 }
 
 .skills__icon--css {
-    color: #347DC6;
-    margin: 2vh;
+  color: #347dc6;
+  margin: 2vh;
 }
 
 .skills__icon--js {
-    color: #F0DB4F;
-    margin: 2vh;
+  color: #f0db4f;
+  margin: 2vh;
 }
 
 .skills__icon--react,
 .skills__icon--wordpress {
-    color: $blue;
-    margin: 2vh;
+  color: $blue;
+  margin: 2vh;
 }
 
 .skills__icon--git {
-    color: #F05133;
-    margin: 2vh;
+  color: #f05133;
+  margin: 2vh;
 }
-
 
 /* EXPERIENCE */
-.logoPwr{
-    width: 10vh;
-    height: auto;
-    display: block;
-    margin: 1vh 2vh;
+.logoPwr {
+  width: 10vh;
+  height: auto;
+  display: block;
+  margin: 1vh 2vh;
 }
 
-.logoBosch{
-    width: 20vh;
-    height: auto;
-    margin: 1vh 2vh;
+.logoBosch {
+  width: 20vh;
+  height: auto;
+  margin: 1vh 2vh;
 }
 
-.logoWabco{
-    width: 20vh;
-    height: auto;
-    margin: 1vh 2vh;
+.logoWabco {
+  width: 20vh;
+  height: auto;
+  margin: 1vh 2vh;
 }
 
 .logoSelf {
-    margin: 1vh 2vh;
+  margin: 1vh 2vh;
 }
 
 .portfolio__button {
-    font-family: $fontLato;
-    font-size: 2vh;
-    text-decoration: none;
-    color: $lightblue;
-    padding: 1vh;
-    margin-right:2vh;
-    background: $midblue;
-    border: none;
+  font-family: $fontLato;
+  font-size: 2vh;
+  text-decoration: none;
+  color: $lightblue;
+  padding: 1vh;
+  margin-right: 2vh;
+  background: $midblue;
+  border: none;
 
-    transition-property: background, border-radius, transform;
-    transition-duration: 1s, 1s, 1s;
-    transition-timing-function: ease-in;
+  transition-property: background, border-radius, transform;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: ease-in;
 }
 
-.portfolio__button:hover{
-    background: $lightgreen;
-    border-radius: 15px;
-    transform: translateY(-5px);
+.portfolio__button:hover {
+  background: $lightgreen;
+  border-radius: 15px;
+  transform: translateY(-5px);
 }
 
-.portfolio__icon{
-    margin-right: 1vh;
+.portfolio__icon {
+  margin-right: 1vh;
 }

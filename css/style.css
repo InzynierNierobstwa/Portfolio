@@ -8,7 +8,7 @@
           transition-duration: .5s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
-  color: #DDF2FF;
+  color: #ddf2ff;
 }
 
 .header__link--start:hover {
@@ -25,7 +25,7 @@
           transition-duration: .5s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
-  color: #DDF2FF;
+  color: #ddf2ff;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -40,11 +40,11 @@
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
-  color: #DDF2FF;
+  color: #ddf2ff;
   margin-left: 1vh;
 }
 
@@ -56,13 +56,13 @@
 .header__button,
 .footer__button {
   font-family: "Lato", sans-serif;
-  color: #DDF2FF;
+  color: #ddf2ff;
   margin: 2vh;
   padding: 1vh;
-  background: #7E92B3;
+  background: #7e92b3;
   border: none;
-  -webkit-box-shadow: 0px 0px 15px 0px #7E92B3;
-          box-shadow: 0px 0px 15px 0px #7E92B3;
+  -webkit-box-shadow: 0px 0px 15px 0px #7e92b3;
+          box-shadow: 0px 0px 15px 0px #7e92b3;
   -webkit-transition-property: background, border-radius, -webkit-transform;
   transition-property: background, border-radius, -webkit-transform;
   transition-property: background, border-radius, transform;
@@ -75,7 +75,7 @@
 
 .header__button:hover,
 .footer__button:hover {
-  background: #00E7AB;
+  background: #00e7ab;
   border-radius: 15px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -83,28 +83,28 @@
 
 /* SKILLS */
 .skills__icon--html {
-  color: #FF6C39;
+  color: #ff6c39;
   margin: 2vh;
 }
 
 .skills__icon--css {
-  color: #347DC6;
+  color: #347dc6;
   margin: 2vh;
 }
 
 .skills__icon--js {
-  color: #F0DB4F;
+  color: #f0db4f;
   margin: 2vh;
 }
 
 .skills__icon--react,
 .skills__icon--wordpress {
-  color: #3A608F;
+  color: #3a608f;
   margin: 2vh;
 }
 
 .skills__icon--git {
-  color: #F05133;
+  color: #f05133;
   margin: 2vh;
 }
 
@@ -136,10 +136,10 @@
   font-family: "Lato", sans-serif;
   font-size: 2vh;
   text-decoration: none;
-  color: #DDF2FF;
+  color: #ddf2ff;
   padding: 1vh;
   margin-right: 2vh;
-  background: #7E92B3;
+  background: #7e92b3;
   border: none;
   -webkit-transition-property: background, border-radius, -webkit-transform;
   transition-property: background, border-radius, -webkit-transform;
@@ -152,7 +152,7 @@
 }
 
 .portfolio__button:hover {
-  background: #00E7AB;
+  background: #00e7ab;
   border-radius: 15px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -182,7 +182,7 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  color: #DDF2FF;
+  color: #ddf2ff;
   padding: 3vh;
 }
 
@@ -203,7 +203,7 @@ body {
 .container {
   width: 100%;
   margin: 0vh auto;
-  background: #DDF2FF;
+  background: #ddf2ff;
 }
 
 /* MAIN PAGE - SKILLS */
@@ -224,13 +224,13 @@ body {
 .portfolio {
   max-width: 1170px;
   font-family: "Nunito", sans-serif;
-  color: #3A608F;
+  color: #3a608f;
   margin: 0 auto;
 }
 
 .portfolio__projects {
   background: #9197AE;
-  color: #DDF2FF;
+  color: #ddf2ff;
   margin: 5vh 3vh;
   padding: 5vh;
 }
@@ -258,13 +258,13 @@ body {
 .experience {
   max-width: 1170px;
   font-family: "Nunito", sans-serif;
-  color: #3A608F;
+  color: #3a608f;
   margin: 0 auto;
 }
 
 .experience__project {
   font-family: "Nunito", sans-serif;
-  color: #DDF2FF;
+  color: #ddf2ff;
   background: #9197AE;
   margin: 5vh 3vh;
   padding: 5vh;
@@ -286,7 +286,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #00E7AB;
+  background: #00e7ab;
 }
 
 .footer__content {
