@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 $midblue: #7E92B3;
 $lightblue: #DDF2FF;
 $blue: #3A608F;
@@ -7,97 +9,133 @@ $fontNunito: 'Nunito', sans-serif;
 $fontLato: 'Lato', sans-serif;
 
 /* HEADER */
+
 .header__link--start {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    @include transform;
     color: $lightblue;
+}
+
+.header__link--start:hover{
+    transform: translateY(-5px);
 }
 
 .header__link--github {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
+    @include transform;
     color: $lightblue;
+    object-fit: contain;
+}
+
+.header__link--github:hover{
+    transform: translateY(-5px);
 }
 
 .header__link--linkedin {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
     color: $lightblue;
+    margin-left: 1vh;
+}
+
+.header__link--linkedin:hover{
+    transform: translateY(-5px);
 }
 
 .header__button,
 .footer__button {
     font-family: $fontLato;
     color: $lightblue;
-    margin: 1em;
-    padding: 0.5em;
+    margin: 2vh;
+    padding: 1vh;
     background: $midblue;
     border: none;
     box-shadow: 0px 0px 15px 0px $midblue;
+
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s, 1s, 1s;
+    transition-timing-function: ease-in;
+}
+
+.header__button:hover,
+.footer__button:hover{
+    background: $lightgreen;
+    border-radius: 15px;
+    transform: translateY(-5px);
 }
 
 /* SKILLS */
 .skills__icon--html {
     color: #FF6C39;
+    margin: 2vh;
 }
 
 .skills__icon--css {
     color: #347DC6;
+    margin: 2vh;
 }
 
 .skills__icon--js {
     color: #F0DB4F;
+    margin: 2vh;
 }
 
 .skills__icon--react,
 .skills__icon--wordpress {
     color: $blue;
+    margin: 2vh;
 }
 
 .skills__icon--git {
     color: #F05133;
+    margin: 2vh;
 }
+
 
 /* EXPERIENCE */
 .logoPwr{
-    width: 15vh;
+    width: 10vh;
     height: auto;
     display: block;
-    margin: 1vh auto;
+    margin: 1vh 2vh;
 }
 
 .logoBosch{
     width: 20vh;
     height: auto;
-    margin: 1vh auto;
+    margin: 1vh 2vh;
 }
 
 .logoWabco{
     width: 20vh;
     height: auto;
-    margin: 1vh auto;
+    margin: 1vh 2vh;
+}
+
+.logoSelf {
+    margin: 1vh 2vh;
 }
 
 .portfolio__button {
     font-family: $fontLato;
+    font-size: 2vh;
     text-decoration: none;
     color: $lightblue;
-    padding: 0.5em;
+    padding: 1vh;
+    margin-right:2vh;
     background: $midblue;
     border: none;
-    transition: all .2s ease;
+
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s, 1s, 1s;
+    transition-timing-function: ease-in;
 }
 
-/* .portfolio__button:hover,
-.portfolio__button:focus{
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
-} */
-
-.logoSelf{
-    margin: 1vh auto;
+.portfolio__button:hover{
+    background: $lightgreen;
+    border-radius: 15px;
+    transform: translateY(-5px);
 }
 
 .portfolio__icon{
-    margin-right: 0.5em;
+    margin-right: 1vh;
 }

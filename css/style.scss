@@ -1,79 +1,105 @@
 @import "variables.scss";
 @import "btnIcons.scss";
 
+body{
+    box-sizing: inherit;
+    position: relative;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
 /* HEADER */
 
 .header{
-    padding: 2em;
     background: url("../img/19292.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     font-family: $fontNunito;
     color: $lightblue;
+    padding: 3vh;
 }
 
 .header__group--up{
-    display: grid;
-    grid-template-columns: 1fr 50% 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 /* MAIN PAGE */
 
 .container{
-    padding: 2em;
+    width: 100%;
+    margin: 0vh auto;
     background: $lightblue;
 }
 
 /* MAIN PAGE - SKILLS */
 
 .skills{
+    max-width: 1170px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 /* MAIN PAGE - PORTFOLIO */
 
 .portfolio{
+    max-width: 1170px;
     font-family: $fontNunito;
-    color: $lightblue;
+    color: $blue;
+    margin: 0 auto;
 }
 
 .portfolio__projects{
     background: $grey;
-    margin: 5vh auto;
+    color: $lightblue;
+    margin: 5vh 3vh;
     padding: 5vh;
+}
+
+.portfolio__img img{
+    width: 100%;
+    max-width: 50vh;
+    height: auto;
+    display: block;
+    margin: 1vh auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.portfolio__buttons{
+    text-align: center;
+    margin-top: 3vh;
 }
 
 .portfolio__text{
     text-align: justify;
 }
 
-.portfolio__buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.portfolio__button{
-    width: 7.5em;
-    margin: 0.5em;
-}
-
 /* MAIN PAGE - EXPERIENCE AND SCHOOLS */
 
 .experience{
+    max-width: 1170px;
     font-family: $fontNunito;
     color: $blue;
+    margin: 0 auto;
 }
 
 .experience__project{
     font-family: $fontNunito;
     color: $lightblue;
     background: $grey;
-    margin: 5vh auto;
+    margin: 5vh 3vh;
     padding: 5vh;
 }
 
@@ -83,29 +109,49 @@
    flex-wrap: wrap;
 }
 
+.experience__text{
+    text-align: justify;
+}
+
 
 /* FOOTER */
 
 .footer{
-    padding: 2em;
     background: $lightgreen;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
 }
 
-.footer__button{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.footer__content{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer__group{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin: auto;
-}
+@media (min-width: 700px){
+    .portfolio__projects{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 
-.footer__link{
-    margin: 0.5em;
+    .portfolio__content{
+        flex: 1 1 70%;
+    }
+
+    .portfolio__img{
+        display: block;
+        width: 40%;
+        height: auto;
+        margin: 0 2vh;
+    }
+
+
+    .experience__project{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 }

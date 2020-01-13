@@ -12,18 +12,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="wrapper">
     <header class="header">
         <div class="header__group header__group--up">
             <a class="header__link header__link--start" target ="_blank" href="#">
                 <i class="fas fa-dice-d20 fa-3x logo"></i>
             </a>
-            <a class="header__link header__link--github" target="_blank" href="#">
-                <i class="fab fa-github-square fa-3x"></i>
-            </a>
-            <a class="header__link header__link--linkedin" target="_blank" href="#">
-                <i class="fab fa-linkedin fa-3x"></i>
-            </a>
+            <div class="header__group--upLeft">
+                <a class="header__link header__link--github" target="_blank" href="#">
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
+                <a class="header__link header__link--linkedin" target="_blank" href="#">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </div>
         </div>
         <h1 class="header__mainTitle">Hello! I'm Kamila and here is my work!</h1>
         <h2 class="header__saidTitle">I would like to be a Frontend developer</h2>
@@ -56,9 +58,11 @@
         </section>
         <section class="portfolio">
             <h2 class="portfolio__title">Projects</h2>
-            <article class="portfolio__projects">
+            <article class="portfolio__projects portfolio__projects--1">
                 <div class="portfolio__img">
-
+                    <div class="portfolio__img--overlay">
+                        <img class="portfolio__img--project1" src="img/questionmark.jpg">
+                    </div>
                 </div>
                 <div class="portfolio__content">
                     <p class="portfolio__text">
@@ -67,7 +71,6 @@
                     magni, saepe a iusto quia incidunt cum error expedita explicabo. 
                     Provident iusto ullam beatae. Tempore, id!
                 </p>
-                </div>
                 <div class="portfolio__buttons">
                     <a class="portfolio__button portfolio__button--github" href="#">
                         <i class="fab fa-github-square portfolio__icon"></i>
@@ -79,10 +82,9 @@
                     </a>
                 </div>
             </article>
-            <article class="portfolio__projects">
-                
+            <article class="portfolio__projects portfolio__projects--2">
                 <div class="portfolio__img">
-                
+                    <img class="portfolio__img--project2" src="img/questionmark.jpg">
                 </div>
                 <div class="portfolio__content">
                     <p class="portfolio__text">
@@ -91,7 +93,6 @@
                         magni, saepe a iusto quia incidunt cum error expedita explicabo.
                         Provident iusto ullam beatae. Tempore, id!
                     </p>
-                </div>
                 <div class="portfolio__buttons">
                     <a class="portfolio__button portfolio__button--github" href="#">
                         <i class="fab fa-github-square portfolio__icon"></i>
@@ -101,20 +102,20 @@
                         <i class="fas fa-link portfolio__icon"></i>
                         Online
                     </a>
+                </div>
                 </div>
             </article>
-            <article class="portfolio__projects">
+            <article class="portfolio__projects portfolio__projects--3">
                 <div class="portfolio__img">
-                
+                    <img class="portfolio__img--project1" src="img/questionmark.jpg">
                 </div>
                 <div class="portfolio__content">
                     <p class="portfolio__text">
-                        Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Sit eveniet labore nemo quibusdam voluptatibus
-                        magni, saepe a iusto quia incidunt cum error expedita explicabo.
-                        Provident iusto ullam beatae. Tempore, id!
-                    </p>
-                </div>
+                    Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Sit eveniet labore nemo quibusdam voluptatibus 
+                    magni, saepe a iusto quia incidunt cum error expedita explicabo. 
+                    Provident iusto ullam beatae. Tempore, id!
+                </p>
                 <div class="portfolio__buttons">
                     <a class="portfolio__button portfolio__button--github" href="#">
                         <i class="fab fa-github-square portfolio__icon"></i>
@@ -124,11 +125,12 @@
                         <i class="fas fa-link portfolio__icon"></i>
                         Online
                     </a>
+                </div>
                 </div>
             </article>
-            <article class="portfolio__projects">
+            <article class="portfolio__projects portfolio__projects--4">
                 <div class="portfolio__img">
-                
+                    <img class="portfolio__img--project4" src="img/questionmark.jpg">
                 </div>
                 <div class="portfolio__content">
                     <p class="portfolio__text">
@@ -137,7 +139,6 @@
                         magni, saepe a iusto quia incidunt cum error expedita explicabo.
                         Provident iusto ullam beatae. Tempore, id!
                     </p>
-                </div>
                 <div class="portfolio__buttons">
                     <a class="portfolio__button portfolio__button--github" href="#">
                         <i class="fab fa-github-square portfolio__icon"></i>
@@ -147,6 +148,7 @@
                         <i class="fas fa-link portfolio__icon"></i>
                         Online
                     </a>
+                </div>
                 </div>
             </article>
         </section>
@@ -189,17 +191,18 @@
                     </p>
                 </div>
         </section>
+        <footer class="footer">
+            <div class="footer__content">
+            <button class="footer__button footer__button--contact">CONTACT</button>
+            <div class="footer__group">
+                <a class="header__link header__link--github footer__link footer__link--github" target="_blank" href="">
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
+                <a class="header__link header__link--linkedin footer__link footer__link--linkedin" target="_blank" href="">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </div>
+        </footer>
     </div>
-    <footer class="footer">
-        <button class="footer__button footer__button--contact">CONTACT</button>
-        <div class="footer__group">
-            <a class="header__link header__link--github footer__link footer__link--github" target="_blank" href="">
-                <i class="fab fa-github-square fa-3x"></i>
-            </a>
-            <a class="header__link header__link--linkedin footer__link footer__link--linkedin" target="_blank" href="">
-                <i class="fab fa-linkedin fa-3x"></i>
-            </a>
-        </div>
-    </footer>
 </body>
 </html>
