@@ -1,3 +1,6 @@
+/* Coolors Exported Palette - coolors.co/ef6461-e4b363-e8e9eb-e0dfd5-313638 */
+/* HSL */
+/* RGB */
 /* HEADER */
 .header__link--start {
   -webkit-transition-property: -webkit-transform;
@@ -209,6 +212,8 @@ body {
 /* MAIN PAGE - SKILLS */
 .skills {
   max-width: 1170px;
+  font-family: "Nunito", sans-serif;
+  color: #3a608f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,33 +260,79 @@ body {
 }
 
 /* MAIN PAGE - EXPERIENCE AND SCHOOLS */
-.experience {
-  max-width: 1170px;
-  font-family: "Nunito", sans-serif;
-  color: #3a608f;
-  margin: 0 auto;
+.slider,
+.slider__container,
+.slider__element {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.experience__project {
-  font-family: "Nunito", sans-serif;
-  color: #ddf2ff;
-  background: #9197AE;
-  margin: 5vh 3vh;
-  padding: 5vh;
+.slider__element {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.experience__img {
+.slider__element1 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/img/questionmark1.jpg");
+}
+
+.slider__element2 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/img/questionmark2.jpg");
+}
+
+.slider__element3 {
+  width: 400px;
+  height: 400px;
+  background-image: url("/img/questionmark3.jpg");
+}
+
+.slider__button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.slider__button--prev {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.slider__button--next {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+  z-index: 1;
+}
+
+.slider__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.experience__text {
-  text-align: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -329,18 +380,6 @@ body {
     width: 40%;
     height: auto;
     margin: 0 2vh;
-  }
-  .experience__project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */
