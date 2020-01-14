@@ -1,44 +1,38 @@
-let sliderImages = document.querySelectorAll(".slider__element");
-let btnNext = document.querySelector(".slider__button--next");
-let btnPrev = document.querySelector(".slider__button--prev");
+const slider = document.querySelector(".slider__container");
+const sliderImg = document.querySelectorAll(".slider__container img");
 
-let current = 0;
+const prevBtn = document.querySelector(".slider__button--prev");
+const nextBtn = document.querySelector(".slider__button--next");
 
-function reset() {
-  for (let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].style.display = "none";
-  }
-}
+let counter = 1;
+const size = sliderImg[0].clientWidth;
 
-function startSlide() {
-  reset();
-  sliderImages[0].style.display = "block";
-}
+slider.style.transform = "translateX(" + -size * counter + "px)";
 
-function slideNext() {
-  reset();
-  sliderImages[current - 1].style.display = "block";
-  current--;
-}
-
-btnNext.addEventListener("click", function() {
-  if (current === 0) {
-    current = sliderImages.length;
-  }
-  slideNext();
+nextBtn.addEventListener("click", () => {
+  if (counter >= sliderImg.length - 1) return;
+  slider.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  slider.style.transform = "translateX(" + -size * counter + "px)";
 });
 
-function slidePrev() {
-  reset();
-  sliderImages[current + 1].style.display = "block";
-  current++;
-}
-
-btnPrev.addEventListener("click", function() {
-  if (current === sliderImages.length - 1) {
-    current = -1;
-  }
-  slidePrev();
+prevBtn.addEventListener("click", () => {
+  if (counter <= 0) return;
+  slider.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  slider.style.transform = "translateX(" + -size * counter + "px)";
 });
 
-startSlide();
+slider.addEventListener("transitionend", () => {
+  console.log(sliderImg[counter]);
+  if (sliderImg[counter].id === "lastImg") {
+    slider.style.transition = "none";
+    counter = sliderImg.length - 2;
+    slider.style.transform = "translateX(" + -size * counter + "px)";
+  }
+  if (sliderImg[counter].id === "firstImg") {
+    slider.style.transition = "none";
+    counter = sliderImg.length - counter;
+    slider.style.transform = "translateX(" + -size * counter + "px)";
+  }
+});
