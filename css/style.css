@@ -233,6 +233,13 @@ body {
   margin: 0 auto;
 }
 
+.portfolio__title {
+  max-width: 1170px;
+  font-family: "Nunito", sans-serif;
+  color: #3a608f;
+  margin: 2vh auto;
+}
+
 .portfolio__projects {
   background: #9197AE;
   color: #ddf2ff;
@@ -265,21 +272,63 @@ body {
   font-family: "Nunito", sans-serif;
   color: #3a608f;
   margin: 0 auto;
-}
-
-.slider {
-  width: 47%;
+  position: relative;
+  max-width: 60%;
   margin: auto;
   overflow: hidden;
-  border: solid black 3px;
+}
+
+.slider__title {
+  max-width: 1170px;
+  font-family: "Nunito", sans-serif;
+  color: #3a608f;
+  margin: 2vh auto;
 }
 
 .slider__container {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 500px;
+}
+
+.slider__container img {
+  /*   width: 100%;
+  height: auto; */
+}
+
+.slider__button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  color: white;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.slider__button--next {
+  right: 5%;
+}
+
+.slider__button--prev {
+  left: 5%;
+}
+
+.experience {
+  max-width: 1170px;
+  font-family: "Nunito", sans-serif;
+  color: #3a608f;
+  margin: 0 auto;
+}
+
+.experience__text {
+  background: #9197AE;
+  color: #ddf2ff;
+  margin: 5vh 3vh;
+  padding: 5vh;
+  text-align: justify;
 }
 
 /* FOOTER */
