@@ -120,11 +120,6 @@ body {
   display: flex;
 }
 
-.slider__container img {
-  /*   width: 100%;
-  height: auto; */
-}
-
 .slider__button {
   position: absolute;
   z-index: 10;
@@ -156,6 +151,27 @@ body {
   padding: 5vh;
   text-align: justify;
 }
+
+.contact {
+  max-width: 600px;
+  font-family: $fontNunito;
+  color: $blue;
+  margin: 0 auto;
+}
+
+.contact__container {
+  background: $grey;
+  color: $lightblue;
+  margin: 5vh 3vh;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  margin: auto;
+}
+
 /* FOOTER */
 
 .footer {

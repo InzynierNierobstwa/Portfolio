@@ -169,17 +169,34 @@
             <div class="slider__button slider__button--next">
                 <i class="fas fa-chevron-circle-right fa-3x"></i>
             </div>
-          </section>
-          <section class="experience">
-              <p class="experience__text">
-                  I studied Energetic on Wroclaw University of Technology. Jeszcze na studiach
-                  rozpoczelam prace jako stazysta w firmie WABCO, po roku zatrudniono mnie 
-                  jako Mlodszy Konstruktor. Po 3 latach zmienilam prace i przenioslam sie do
-                  firmy Bosch na stanowisko Konstruktora. W przeciagu tych prawie 5 lat w obu
-                  firmach, brakowalo mi przede wszystkim mozliwosci rozwoju i działania - 
-                  stąd moja decyzja o zmianie branży.
-              </p>
-          </section>
+        </section>
+        <section class="experience">
+            <p class="experience__text">
+                I studied Energetic on Wroclaw University of Technology. Jeszcze na studiach
+                rozpoczelam prace jako stazysta w firmie WABCO, po roku zatrudniono mnie 
+                jako Mlodszy Konstruktor. Po 3 latach zmienilam prace i przenioslam sie do
+                firmy Bosch na stanowisko Konstruktora. W przeciagu tych prawie 5 lat w obu
+                firmach, brakowalo mi przede wszystkim mozliwosci rozwoju i działania - 
+                stąd moja decyzja o zmianie branży.
+            </p>
+        </section>
+        <section class="contact">
+            <form name="contact" method="POST" data-netlify="true" class="contact__container">
+                <label for="name">
+                    <input type="text" name="name" class="contact__input contact__input--name" placeholder="Name*" required>
+                </label>
+                <label for="email">
+                    <input type="email" name="email" class="contact__input contact__input--email" placeholder="Email*" required>
+                </label>
+                <label for="subject">
+                    <input type="text" name="subject" class="contact__input contact__input--subject" placeholder="Subject">
+                </label>
+                <label for="message">
+                    <textarea name="message" class="contact__input contact__input--message" placeholder="Message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
         <footer class="footer">
             <div class="footer__content">
             <button class="footer__button footer__button--contact">CONTACT</button>
