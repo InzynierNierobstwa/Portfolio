@@ -7,8 +7,8 @@
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   color: #ddf2ff;
@@ -24,8 +24,8 @@
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   color: #ddf2ff;
