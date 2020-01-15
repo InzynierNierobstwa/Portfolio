@@ -1,3 +1,4 @@
+//slider
 const slider = document.querySelector(".slider__container");
 const sliderImg = document.querySelectorAll(".slider__container img");
 
@@ -35,4 +36,29 @@ slider.addEventListener("transitionend", () => {
     counter = sliderImg.length - counter;
     slider.style.transform = "translateX(" + -size * counter + "px)";
   }
+});
+
+//contact form
+const btnContact1 = document.querySelector(".header__button--contact");
+const btnContact2 = document.querySelector(".footer__button--contact");
+const contactForm = document.querySelector(".contact");
+const btnClose = document.querySelector(".contact__button--close");
+const windowAll = document.querySelector(".wrapper");
+
+btnContact1.addEventListener("click", () => {
+  console.log("ok");
+  contactForm.style.display = "block";
+  contactForm.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+});
+
+btnContact2.addEventListener("click", () => {
+  console.log("ok");
+  contactForm.style.display = "block";
+  contactForm.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+});
+
+btnClose.addEventListener("click", () => {
+  console.log("close");
+  contactForm.style.display = "none";
+  contactForm.style.backgroundColor = "rgba(0, 0, 0, 0)";
 });

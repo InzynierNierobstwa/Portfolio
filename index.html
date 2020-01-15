@@ -181,21 +181,24 @@
             </p>
         </section>
         <section class="contact">
-            <form name="contact" method="POST" data-netlify="true" class="contact__container">
-                <label for="name">
-                    <input type="text" name="name" class="contact__input contact__input--name" placeholder="Name*" required>
-                </label>
-                <label for="email">
-                    <input type="email" name="email" class="contact__input contact__input--email" placeholder="Email*" required>
-                </label>
-                <label for="subject">
-                    <input type="text" name="subject" class="contact__input contact__input--subject" placeholder="Subject">
-                </label>
-                <label for="message">
-                    <textarea name="message" class="contact__input contact__input--message" placeholder="Message"></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
+            <div class="contact__wrapper">
+                <form name="contact" method="POST" data-netlify="true" class="contact__container">
+                    <label for="name">
+                        <input type="text" name="name" class="contact__input contact__input--name" placeholder="Name*" required>
+                    </label>
+                    <label for="email">
+                        <input type="email" name="email" class="contact__input contact__input--email" placeholder="Email*" required>
+                    </label>
+                    <label for="subject">
+                        <input type="text" name="subject" class="contact__input contact__input--subject" placeholder="Subject">
+                    </label>
+                    <label for="message">
+                        <textarea name="message" class="contact__input contact__input--message" placeholder="Message" rows="10"></textarea>
+                    </label>
+                    <button type="submit" class="contact__button button--contact">Send</button>
+                    <button type="button" class="contact__button contact__button--close">Cancel</button>
+                </form>
+        </div>
         </section>
         <footer class="footer">
             <div class="footer__content">
